@@ -1,0 +1,71 @@
+% main.tex
+% 北方工业大学本科毕业设计论文 LaTeX 主文件
+% 使用 XeLaTeX 编译
+
+\documentclass{ncut-thesis}
+
+% ==================== 参考文献数据库 ====================
+\addbibresource{references.bib}
+
+% ==================== 论文信息 ====================
+% 封面信息
+\titlefirstline{这里是论文的中文题目第一行}    % 题目第一行
+\titlesecondline{这里是论文的中文题目第二行}   % 题目第二行
+\thesistitle{这里是论文的完整中文题目}  % 完整中文标题
+\thesistitleEN{Here is the English Title of the Thesis}  % 英文标题
+\studentname{张三}            % 学生姓名
+\studentid{22101010000}       % 学号
+\classname{某某班级}         % 班级
+\department{某某学院}        % 院系
+\major{某某专业}     % 专业
+\advisor{李四 教授}           % 指导教师
+\submitdate{2026年5月}       % 提交日期
+
+\usepackage{pdfpages}
+
+% ==================== 文档开始 ====================
+\begin{document}
+
+% ==================== 封面及原创性声明 ====================
+% 提示：使用学校给定的 docx 模板填写好封面和声明，然后导出为 PDF，例如命名为 cover.pdf。
+% 然后使用 \includepdf 引入（请确保路径正确）。
+% 如果要生成纯代码的论文进行测试，可以注释掉此行。
+\includepdf[pages={1-2}]{cover.pdf}
+
+% ==================== 前置部分 ====================
+\frontmatter
+\pagestyle{frontmatter}
+
+% 中文摘要
+\input{chapters/abstract_cn.tex}
+
+% 英文摘要
+\input{chapters/abstract_en.tex}
+
+% 目录
+\tableofcontents
+
+% ==================== 正文部分 ====================
+\mainmatter
+\pagestyle{mainmatter}
+
+% 各章节内容
+\input{chapters/chapter1.tex}   % 引言
+\input{chapters/chapter2.tex}   % 多语种数据构建与评测体系设计
+\input{chapters/chapter3.tex}   % 多语种语音模型评测实验
+\input{chapters/chapter4.tex}   % 语音分离模型评估
+\input{chapters/chapter5.tex}   % 全双工语音对话系统设计与实现
+
+% ==================== 后置部分 ====================
+\backmatter
+
+% 致谢
+\input{chapters/acknowledgement.tex}
+
+% 参考文献
+\printbibliography[heading=bibintoc, title={参考文献}]
+
+% 附录（可选）
+\input{chapters/appendix.tex}
+
+\end{document}

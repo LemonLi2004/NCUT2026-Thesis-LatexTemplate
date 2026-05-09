@@ -1,0 +1,224 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{rabiner1989tutorial}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=fc5e10874f928d24803009f43a119ad9}{%
+           family={Rabiner},
+           familyi={R\bibinitperiod},
+           given={Lawrence\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=fc5e10874f928d24803009f43a119ad9}{%
+           family={Rabiner},
+           familyi={R\bibinitperiod},
+           given={Lawrence\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{fullhash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{fullhashraw}{fc5e10874f928d24803009f43a119ad9}
+      \strng{bibnamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{authorbibnamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{authornamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{authorfullhash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{authorfullhashraw}{fc5e10874f928d24803009f43a119ad9}
+      \strng{nameabibnamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{nameanamehash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{nameafullhash}{fc5e10874f928d24803009f43a119ad9}
+      \strng{nameafullhashraw}{fc5e10874f928d24803009f43a119ad9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{A tutorial on hidden Markov models and selected applications in speech recognition}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{77}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \field{pages}{257\bibrangedash 286}
+      \range{pages}{30}
+      \keyw{rabiner1989tutorial}
+    \endentry
+    \entry{hinton2012deep}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2f5fbdc5c3cf91f62a64663cd72397b3}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=93509a9a7ccede33feb1e702b5a8bb9f}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b2367e57c17225a47853346440e87b35}{%
+           family={Dahl},
+           familyi={D\bibinitperiod},
+           given={George\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=0d87a656f9bdc99e921c45f73da515b8}{%
+           family={Mohamed},
+           familyi={M\bibinitperiod},
+           given={Abdel-rahman},
+           giveni={A\bibinithyphendelim r\bibinitperiod}}}%
+        {{hash=5a9f30e0c0441d2aea255916ff375e8c}{%
+           family={Jaitly},
+           familyi={J\bibinitperiod},
+           given={Navdeep},
+           giveni={N\bibinitperiod}}}%
+        {{hash=99e8963f52f6bfb1af553a6a8823718a}{%
+           family={Senior},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8051922e7bd286f884bfbd1023ef62f5}{%
+           family={Vanhoucke},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=842040ccc784c0e00e9b177a7271883a}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=28a3d000e5cd60656250014708db8ec1}{%
+           family={Sainath},
+           familyi={S\bibinitperiod},
+           given={Tara\bibnamedelima N},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \true{morenamea}
+      \name{namea}{10}{}{%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2f5fbdc5c3cf91f62a64663cd72397b3}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=93509a9a7ccede33feb1e702b5a8bb9f}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b2367e57c17225a47853346440e87b35}{%
+           family={Dahl},
+           familyi={D\bibinitperiod},
+           given={George\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=0d87a656f9bdc99e921c45f73da515b8}{%
+           family={Mohamed},
+           familyi={M\bibinitperiod},
+           given={Abdel-rahman},
+           giveni={A\bibinithyphendelim r\bibinitperiod}}}%
+        {{hash=5a9f30e0c0441d2aea255916ff375e8c}{%
+           family={Jaitly},
+           familyi={J\bibinitperiod},
+           given={Navdeep},
+           giveni={N\bibinitperiod}}}%
+        {{hash=99e8963f52f6bfb1af553a6a8823718a}{%
+           family={Senior},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8051922e7bd286f884bfbd1023ef62f5}{%
+           family={Vanhoucke},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=842040ccc784c0e00e9b177a7271883a}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=28a3d000e5cd60656250014708db8ec1}{%
+           family={Sainath},
+           familyi={S\bibinitperiod},
+           given={Tara\bibnamedelima N},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{394c7f90c50c43b0c3394f0b9f423e53}
+      \strng{fullhash}{a96d72618180c7a3ba8881af6fd2e36f}
+      \strng{fullhashraw}{a96d72618180c7a3ba8881af6fd2e36f}
+      \strng{bibnamehash}{4493e6a628147468c6762d54b3af83ab}
+      \strng{authorbibnamehash}{4493e6a628147468c6762d54b3af83ab}
+      \strng{authornamehash}{394c7f90c50c43b0c3394f0b9f423e53}
+      \strng{authorfullhash}{a96d72618180c7a3ba8881af6fd2e36f}
+      \strng{authorfullhashraw}{a96d72618180c7a3ba8881af6fd2e36f}
+      \strng{nameabibnamehash}{4493e6a628147468c6762d54b3af83ab}
+      \strng{nameanamehash}{394c7f90c50c43b0c3394f0b9f423e53}
+      \strng{nameafullhash}{a96d72618180c7a3ba8881af6fd2e36f}
+      \strng{nameafullhashraw}{a96d72618180c7a3ba8881af6fd2e36f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Signal Processing Magazine}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Deep neural networks for acoustic modeling in speech recognition}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{82\bibrangedash 97}
+      \range{pages}{16}
+      \keyw{hinton2012deep}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
