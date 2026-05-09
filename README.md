@@ -44,3 +44,66 @@ latexmk -xelatex main.tex
 - **字体支持**：本模板依赖于系统的中文字体（如黑体、宋体等）。请确保你的操作系统中安装了相应的基本中文字体。
 
 祝大家毕业顺利！
+
+## 环境配置与安装指南
+
+为了顺利编译本模板，你需要安装 **LaTeX 发行版**（提供底层的编译引擎，如 xelatex）以及一个 **LaTeX 编辑器**（推荐使用 VSCode）。
+
+### 第一步：安装 LaTeX 发行版
+
+**Windows 用户：**
+推荐安装 **TeX Live**（包含最全的宏包，免去缺包烦恼）。
+1. 访问清华大学开源软件镜像站：[TeX Live 镜像](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)。
+2. 下载 `texlive.iso` 文件（约 5GB）。
+3. 右键该 iso 文件，选择“装载”（或使用虚拟光驱打开）。
+4. 右键以管理员身份运行 `install-tl-windows.bat`。
+5. 在弹出的安装向导中，一路点击“下一步/Next”完成安装（安装过程可能需要 30 分钟以上，请耐心等待）。
+
+**macOS 用户：**
+推荐安装 **MacTeX**。
+1. 访问清华大学开源软件镜像站：[MacTeX 镜像](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex/)。
+2. 下载 `MacTeX.pkg` 文件。
+3. 双击 pkg 文件，按照系统提示的安装向导完成安装即可。
+
+### 第二步：安装与配置编辑器 (VSCode)
+
+强烈推荐使用 **Visual Studio Code (VSCode)** 作为论文的编写工具，它轻量且插件生态强大。
+
+1. **下载安装 VSCode**：前往 [VSCode 官网](https://code.visualstudio.com/) 下载并安装。
+2. **安装核心插件**：
+   - 打开 VSCode，点击左侧边栏的“扩展 (Extensions)”图标。
+   - 搜索并安装 **`LaTeX Workshop`** 插件（作者为 James-Yu）。
+3. **配置编译链（一键编译）**：
+   - 按下 `Ctrl + Shift + P` (Windows) 或 `Cmd + Shift + P` (Mac)，输入 `Open Settings (JSON)`，打开设置文件。
+   - 在配置文件中添加以下关于 `latexmk` 的配置（本模板依赖 `xelatex` 编译）：
+
+```json
+"latex-workshop.latex.recipes": [
+    {
+        "name": "latexmk 🔃",
+        "tools": [
+            "latexmk"
+        ]
+    }
+],
+"latex-workshop.latex.tools": [
+    {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "-xelatex",
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+    }
+]
+```
+
+### 第三步：开始编写与编译
+
+1. 在 VSCode 中打开本模板的文件夹。
+2. 打开 `main.tex` 文件。
+3. 点击 VSCode 侧边栏的 **TEX** 图标，在“Build LaTeX project”菜单中点击 **`latexmk 🔃`**，即可实现一键编译（或者直接按 `Ctrl+Alt+B` / `Cmd+Option+B`）。
+4. 编译成功后，点击右上角的“View LaTeX PDF”图标，即可在右侧分屏实时预览排版效果。
