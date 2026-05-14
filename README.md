@@ -118,3 +118,19 @@ latexmk -xelatex main.tex
    - 确保 `latexmk` 编译成功且生成了最新的 PDF。
    - 右键该 PDF 文件，选择“压缩”为 `.zip` 文件。
    - 登录上述检测系统网址，上传该 ZIP 压缩包即可获取详细的格式诊断报告（若按本模板正确书写，问题总数应为 0）。
+
+## 常见问题与字体配置
+
+### 跨平台字体问题 (Windows/macOS)
+
+为了保证论文在不同操作系统下都能正确编译并显示正确的中文字体，本模板的 `ncut-thesis.cls` 中内置了**跨平台字体自动检测逻辑**：
+
+- **macOS 环境**：模板会自动检测系统字体路径，并使用 macOS 原生的 `Songti SC`、`Heiti SC`、`Kaiti SC` 和 `STFangsong` 进行排版。
+- **Windows 环境**：模板会自动回退使用 Windows 原生的中易字体集：`SimSun` (宋体)、`SimHei` (黑体)、`KaiTi` (楷体) 和 `FangSong` (仿宋)。
+
+**⚠️ Windows 用户注意事项：**
+如果你的电脑是新安装的 Windows 系统，或者精简版系统，可能会缺失部分默认的中易字体（尤其是**楷体(KaiTi)**和**仿宋(FangSong)**）。
+如果在编译时看到类似 `Font "KaiTi" does not contain requested Script "CJK"` 或 `找不到中文字体` 的报错，请：
+1. 检查 `C:\Windows\Fonts` 目录下是否包含**楷体**和**仿宋**。
+2. 如果没有，请在网上下载标准的 `simkai.ttf` (楷体) 和 `simfang.ttf` (仿宋)，右键选择“为所有用户安装”。
+3. 重新运行 `latexmk` 编译即可解决。

@@ -63,16 +63,28 @@
 \setsansfont{Arial}
 \setmonofont{Courier New}
 
-% 中文字体设置
-\setCJKmainfont[BoldFont=Heiti SC, ItalicFont=Kaiti SC]{Songti SC}
-\setCJKsansfont{Heiti SC}
-\setCJKmonofont{STFangsong}
-
-% 定义字体命令（ctex已定义，此处重新指定字体）
-\renewcommand{\songti}{\CJKfontspec{Songti SC}}
-\renewcommand{\heiti}{\CJKfontspec{Heiti SC}}
-\renewcommand{\kaishu}{\CJKfontspec{Kaiti SC}}
-\renewcommand{\fangsong}{\CJKfontspec{STFangsong}}
+% 中文字体设置 (根据操作系统自动选择)
+\IfFileExists{/System/Library/Fonts/PingFang.ttc}{
+    % macOS 字体配置
+    \setCJKmainfont[BoldFont=Heiti SC, ItalicFont=Kaiti SC]{Songti SC}
+    \setCJKsansfont{Heiti SC}
+    \setCJKmonofont{STFangsong}
+    
+    \renewcommand{\songti}{\CJKfontspec{Songti SC}}
+    \renewcommand{\heiti}{\CJKfontspec{Heiti SC}}
+    \renewcommand{\kaishu}{\CJKfontspec{Kaiti SC}}
+    \renewcommand{\fangsong}{\CJKfontspec{STFangsong}}
+}{
+    % Windows/Linux 字体配置 (假设使用常见的 Windows 字体名称)
+    \setCJKmainfont[BoldFont=SimHei, ItalicFont=KaiTi]{SimSun}
+    \setCJKsansfont{SimHei}
+    \setCJKmonofont{FangSong}
+    
+    \renewcommand{\songti}{\CJKfontspec{SimSun}}
+    \renewcommand{\heiti}{\CJKfontspec{SimHei}}
+    \renewcommand{\kaishu}{\CJKfontspec{KaiTi}}
+    \renewcommand{\fangsong}{\CJKfontspec{FangSong}}
+}
 
 % 字号定义 (pt)
 % 二号 = 22pt, 三号 = 16pt, 四号 = 14pt, 小四 = 12pt, 五号 = 10.5pt, 小五 = 9pt
